@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Asian Palace</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+
+    <!-- title -->
+    <h1>The Asian Palace</h1>
+
+    <hr>
+    <br>
+    <!-- button to switch between cuisine. -->
+    <div class="btn">
+        <button class="custom-btn active-btn" onclick="indian()">Indian</button>
+        <button class="custom-btn" onclick="chinese()">Chinese</button>
+        <button class="custom-btn" onclick="japanese()">Japanese</button>
+        <button class="custom-btn" onclick="abt()">About Us</button>       
+    </div>
+
+    <!-- indian div -->
+    <div id="indian" style="display: none;">
+        <p class="menuHeading">INDIAN</p>
+        <div class="container">
+            <div class="card" onclick="sPalakPaneer()" ondblclick="dPalakPaneer()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/Palak paneer.jpg" alt="" width="100%">
+                        <h2 class="food-item">Palak paneer</h2>
+                        <p class="foodDisp" id="palakPaneerDisp">
+                            Palak paneer is one of the all-time most beloved Indian recipes.
+                            <br>Rich with spices, spinach, and cheese that squeaks delightfully with each bite,
+                            <br>Palak paneer is packed with flavor and gentle heat from garlic and chilies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sButterChiken()" ondblclick="dButterChiken()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/butter chicken.jpg" alt="" width="100%">
+                        <h2 class="food-item">Butter chicken</h2>
+                        <p class="foodDisp" id="butterChikenDisp">
+                            Indian butter chicken consists of pieces of tandoori chicken cooked in a tangy, velvety tomato cream sauce.
+                            <br> Despite its rich flavors and hearty consistency, butter chicken is a surprisingly low-carb meal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"  onclick="sFishCurry()" ondblclick="dFishCurry()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/fish curry.jpg" alt="" width="100%">
+                        <h2 class="food-item">Fish Curry</h2>
+                        <p class="foodDisp" id="fishCurryDisp">
+                            Fish curry is an Indian dish featuring white fish cooked in a spiced broth or sauce,
+                            <br> typically served with basmati rice, idli, or dosa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sPakora()" ondblclick="dPakora()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/pakora.jpeg" alt="" width="100%">
+                        <h2 class="food-item">Pakora</h2>
+                        <p class="foodDisp" id="pakoraDisp">
+                            Every culture has its stand-out fried foods.
+                            <br> In India, few things complement a cup of sweet, milky masala chai like a crispy, craggy vegetable pakora.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- chinese div -->
+    <div id="chinese" style="display: none;">
+        <p class="menuHeading">CHINESE</p>
+        <div class="container">
+            <div class="card" onclick="sDimSums()" ondblclick="dDimSums()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/dimsum.jpg" alt="" width="100%">
+                        <h2 class="food-item">Dim Sums</h2>
+                        <p class="foodDisp" id="dimSumsDisp">
+                            One of the most loves street food from the north east, widely popular across northern India now comes to your kitchen!
+                            <br>Small bite-sized rounds stuffed with veggies or meat.
+                            <br>Dimsums are perfect steamed snack to delight those evening cravings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sHotAndSourSoup()" ondblclick="dHotAndSourSoup()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/soup.jpg" alt="" width="100%">
+                        <h2 class="food-item">Hot and Sour Soup</h2>
+                        <p class="foodDisp" id="hotAndSourSoupDisp">
+                            Isn't it great to warm up with a piping hot bowl of soup during the winters? Here is a soup with a spicy and sour broth.
+                            <br> It is made with the goodness of mushrooms, cabbage, carrot and a spicy twist of red peppers or white pepper and sour with vinegar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sSpringRolls()" ondblclick="dSpringRolls()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/spring-roll.jpg" alt="" width="100%">
+                        <h2 class="food-item">Spring Rolls</h2>
+                        <p class="foodDisp" id="springRollsDisp">
+                            A crisp appetizer where shredded veggies are encased in thin sheets and then fried golden.
+                            <br> Little munchies to prepare at home for a high tea menu or just a party starter, serve with a tangy dip.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sTofu()" ondblclick="dTofu()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/tofu.jpg" alt="" width="100%">
+                        <h2 class="food-item">Stir Fried Tofu with Rice</h2>
+                        <p class="foodDisp" id="tofuDisp">
+                            A simple stir-fry with tofu and oriental sauces.
+                             <br>Stir fried togu with rice is a great main course dish to prepare at home laced with flavourful spices and sauces.
+                             Serve with some fried rice to make a wholesome meal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- japanese div -->
+    <div id="japanese" style="display: none;">
+        <p class="menuHeading">JAPANESE</p>
+        <div class="container">
+            <div class="card" onclick="sSushi()" ondblclick="dSushi()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/sushi.jpg" alt="" width="100%">
+                        <h2 class="food-item">Sushi</h2>
+                        <p class="foodDisp" id="sushiDisp">
+                            Sushi is one of the first foods that spring to mind when we think about Japanese cuisine.
+                            This delicacy was one of the first Japanese dishes to be exported to the US after the Meiji Restoration in 1868,
+                            and since then its popularity has steadily increased year after year. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sTamagoyaki()" ondblclick="dTamagoyaki()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/tamagoyaki.jpg" alt="" width="100%">
+                        <h2 class="food-item">Tamagoyaki</h2>
+                        <p class="foodDisp" id="tamagoyakiDisp">   
+                            A breakfast, lunch, or dinner, tamagoyaki is a Japanese omelette made by sequentially cooking and rolling up several layers of beaten egg.
+                            A freshly cooked tamagoyaki looks like a rolled up crêpe,
+                            which can then be sliced up and eaten by itself (at breakfast) or used a topping or filling in sushi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sSoba()" ondblclick="dSoba()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/soba.jpg" alt="" width="100%">
+                        <h2 class="food-item">Soba</h2>
+                        <p class="foodDisp" id="sobaDisp">   
+                            Otherwise known as ‘buckwheat noodles’ (‘soba’ is the Japanese word for ‘buckwheat’), 
+                            soba are one of the three main varieties of noodle most frequently eaten in Japan. 
+                            Unlike udon and ramen; soba noodles are made partially, if not entirely, from buckwheat flour.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="sUnagiNoKabayaki()" ondblclick="dUnagiNoKabayaki()">
+                <div class="box">
+                    <div class="content">
+                        <img class="img" src="pics/unagi.jpg" alt="" width="100%">
+                        <h2 class="food-item">Unagi no Kabayaki</h2>
+                        <p class="foodDisp" id="unagiNoKabayakiDisp">   
+                            ‘Unagi’ is the Japanese word for ‘freshwater eel’, and unagi no kabayaki is one popular unagi
+                            dish that dates back to the Edo period (1603-1868),
+                            Unagi no kabayaki is made by brushing prepared eel fillets with a
+                            sweetened soy sauce-based kabayaki sauce and broiling them on a grill.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="abtUs">
+        <p class="menuHeading">ABOUT US</p>
+        <p class="disp">
+            All of our menu items are inspired by <b>Asian cuisine</b> and have been created by our head chef, after studying authentic Asian cuisine in <b>Singapore</b>. 
+            <br> Not only do we have fresh flown-in seafood, but we also have a variety of handcrafted cocktails, wine, and beer to choose from.
+            <br> Come dine with us & experience an authentic Asian meal in an intimate dining space. <br> <b> We look forward to serving you!</b> 
+        </p>
+        <hr>
+        <br>
+        <p>
+            OPEN FROM: 10am - 12pm.
+            <br><b>EVERY DAY OF THE WEEK</b>
+        </p>
+    </div>
+    
+    
+        
+
+        <script src="JS.js"></script>
+</body>
+</html>
